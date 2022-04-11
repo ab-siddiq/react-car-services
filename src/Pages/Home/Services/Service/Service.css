@@ -1,0 +1,30 @@
+.service-container{
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.service-container img{
+    width: 100%;
+    border-radius: 5px;
+}
+.service-description{
+    padding: 10px;
+    
+}
+
+.service-description .book-btn{
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: lawngreen;
+    border: none;
+    cursor: pointer;
+}
+
+.service-description .book-btn:hover{
+    transform: scale(110%);
+    transition-duration: 200ms;
+    transition-delay: 10ms;
+    animation: 200s ease-in-out;
+}
