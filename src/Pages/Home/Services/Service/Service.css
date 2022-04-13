@@ -1,4 +1,5 @@
 .service-container{
+    position: relative;
     width: 100%;
     border: 1px solid gray;
     border-radius: 10px;
@@ -10,7 +11,8 @@
     border-radius: 5px;
 }
 .service-description{
-    padding: 10px;
+    padding: 5px;
+    height: 250px;
     
 }
 
@@ -23,8 +25,15 @@
 }
 
 .service-description .book-btn:hover{
-    transform: scale(110%);
+    transform: scale(105%);
     transition-duration: 200ms;
     transition-delay: 10ms;
     animation: 200s ease-in-out;
+}
+.book-btn{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    text-align: center;
+    width: 100%;
 }

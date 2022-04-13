@@ -11,7 +11,7 @@ const Service = ({ service }) => {
                     <h2>{name}</h2>
                     <p>${price}</p>
                     <p><small>Description: {description}</small></p>
-                    <button className='book-btn'>Book { name}</button>
+                    <button className='book-btn'>Book {name}</button>
                 </div>
             </div>
         </div>
