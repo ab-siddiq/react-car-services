@@ -7,9 +7,10 @@ const Login = () => {
     const passwordRef = useRef('');
     const navigate = useNavigate();
     const handleSubmit = e => {
-        ProgressEvent.default();
-        const email = emailRef;
-        const password = passwordRef;
+        e.preventDefault();
+        const email = emailRef.current.value;
+        const password = passwordRef.current.value;
+        console.log(email,' ', password)
     }
     const handleRegister = e => {
         navigate('/register');
@@ -34,7 +35,7 @@ const Login = () => {
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
                     <Form.Check type="checkbox" label="Check me out" />
                 </Form.Group>
-                <p className=''>New to dynamic car solution? <Link className='text-danger pe-auto' to='/register'  onClick={handleRegister}>Please create an account.</Link></p>
+                <p className=''>New to dynamic car solution? <Link className='text-danger text-decoration-none' to='/register'  onClick={handleRegister}>Please create an account.</Link></p>
                 <Button variant="primary" type="submit">
                     Submit
                 </Button>
